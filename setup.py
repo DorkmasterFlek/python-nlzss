@@ -21,16 +21,17 @@
 from setuptools import setup, Extension
 
 setup(name="nlzss",
-      version='0.2',
+      version='0.3',
       description="Nintendo LZSS compression algorithm",
       author="Dorkmaster Flek & CUE",
       author_email="dorkmasterflek@gmail.com",
       maintainer="Dorkmaster Flek",
       maintainer_email="dorkmasterflek@gmail.com",
       license="GNU GPL v3",
+      python_requires=">=2, >=3",
       ext_modules=[Extension(
             "nlzss",
             sources=["pynlzss.c", "lib/nlzss.c"],
             include_dirs=['./include'],
             language="C")],
-      long_description="""A package for decoding / encoding LZSS-compressed data for Nintendo GBA/DS""")
+      long_description="""A package for decoding / encoding LZSS-compressed data for Nintendo GBA/DS.  Supports Python 2/3.""")
