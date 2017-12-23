@@ -21,14 +21,13 @@
 from setuptools import setup, Extension
 
 setup(name="nlzss",
-      version='0.1',
+      version='0.2',
       description="Nintendo LZSS compression algorithm",
       author="Dorkmaster Flek & CUE",
       author_email="dorkmasterflek@gmail.com",
       maintainer="Dorkmaster Flek",
       maintainer_email="dorkmasterflek@gmail.com",
       license="GNU GPL v3",
-      platforms=["Windows", "Linux"],
       ext_modules=[Extension(
             "nlzss",
             sources=["pynlzss.c", "lib/nlzss.c"],
