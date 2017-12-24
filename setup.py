@@ -18,10 +18,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import os
+
 from setuptools import setup, Extension
 
+here = os.path.abspath(os.path.dirname(__file__))
+
+# Get the long description from the README file
+with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(name="nlzss",
-      version='0.3',
+      version='0.1.1',
       description="Nintendo LZSS compression algorithm",
       author="Dorkmaster Flek & CUE",
       author_email="dorkmasterflek@gmail.com",
@@ -34,4 +42,4 @@ setup(name="nlzss",
             sources=["pynlzss.c", "lib/nlzss.c"],
             include_dirs=['./include'],
             language="C")],
-      long_description="""A package for decoding / encoding LZSS-compressed data for Nintendo GBA/DS.  Supports Python 2/3.""")
+      long_description=long_description)

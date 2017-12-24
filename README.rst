@@ -1,5 +1,6 @@
 PyNLZSS
-======
+=======
+
 Python bindings for the Nintendo GBA/DS LZSS compression algorithm.
 
 LZSS algorithm from http://www.romhacking.net/utilities/826/
