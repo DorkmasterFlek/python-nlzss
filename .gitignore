@@ -17,6 +17,7 @@ eggs/
 .eggs/
 parts/
 sdist/
+test/
 var/
 wheels/
 *.egg-info/
