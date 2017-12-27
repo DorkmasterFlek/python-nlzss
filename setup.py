@@ -29,9 +29,9 @@ with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name="nlzss",
-      version='0.1.1',
+      version='0.1.2',
       description="Nintendo LZSS compression algorithm",
-      author="Dorkmaster Flek & CUE",
+      author="Cue, Dorkmaster Flek",
       author_email="dorkmasterflek@gmail.com",
       maintainer="Dorkmaster Flek",
       maintainer_email="dorkmasterflek@gmail.com",

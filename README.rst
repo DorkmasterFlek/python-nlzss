@@ -3,7 +3,7 @@ PyNLZSS
 
 Python bindings for the Nintendo GBA/DS LZSS compression algorithm.
 
-LZSS algorithm from http://www.romhacking.net/utilities/826/
+LZSS algorithm and C code from CUE's tools: http://www.romhacking.net/utilities/826/
 
 Installation
 ------------
@@ -27,3 +27,5 @@ Decode
 
     >> import nzlss
     >> nzlss.decode_file(in_path='in_file.txt', out_path='out_file.txt')
+
+That's it!
